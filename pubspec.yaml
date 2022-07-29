@@ -1,7 +1,7 @@
 name: pkg_onbording_slide
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/JL-Lucas-DVS/pkg_onbordign_slide/tree/main
 
 environment:
   sdk: ">=2.17.1 <3.0.0"
