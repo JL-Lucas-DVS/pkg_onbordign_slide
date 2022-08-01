@@ -32,6 +32,9 @@ class OnBoard extends HookConsumerWidget {
   /// OnBoard Image height
   final double? imageHeight;
 
+  /// Page whith Widget
+  final double? pageViewWidth;
+
   /// Skip Button Widget
   final Widget? skipButton;
 
@@ -61,6 +64,7 @@ class OnBoard extends HookConsumerWidget {
     this.imageHeight,
     this.skipButton,
     this.nextButton,
+    this.pageViewWidth,
     this.duration = const Duration(milliseconds: 250),
     this.curve = Curves.easeInOut,
     this.pageIndicatorStyle = const PageIndicatorStyle(
@@ -86,6 +90,7 @@ class OnBoard extends HookConsumerWidget {
         skipButton: skipButton,
         nextButton: nextButton,
         duration: duration,
+        pageViewWidth: pageViewWidth,
         curve: curve,
         pageIndicatorStyle: pageIndicatorStyle,
       ),
@@ -120,6 +125,9 @@ class _OnBoard extends HookConsumerWidget {
   /// OnBoard Image height
   final double? imageHeight;
 
+  /// Page whith Widget
+  final double? pageViewWidth;
+
   /// Skip Button Widget
   final Widget? skipButton;
 
@@ -148,6 +156,7 @@ class _OnBoard extends HookConsumerWidget {
     this.imageWidth,
     this.imageHeight,
     this.skipButton,
+    this.pageViewWidth,
     this.nextButton,
     this.duration = const Duration(milliseconds: 250),
     this.curve = Curves.easeInOut,
@@ -187,6 +196,7 @@ class _OnBoard extends HookConsumerWidget {
           ),
           Expanded(
             child: SizedBox(
+                width: pageViewWidth,
                 height: pageViewHeight,
                 child: PageView.builder(
                   controller: pageController,

@@ -20,6 +20,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: OnBoard(
+        pageViewWidth: 500,
+        //Size Pageview
         pageController: _pageController,
         // Either Provide onSkip Callback or skipButton Widget to handle skip state
         onSkip: () {
